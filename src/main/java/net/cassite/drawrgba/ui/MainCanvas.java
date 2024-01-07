@@ -625,7 +625,7 @@ public class MainCanvas extends FusionPane {
         if (pixelBuffer == null) {
             return null;
         }
-        var img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB_PRE);
+        var img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
         for (var x = 0; x < width; ++x) {
             for (var y = 0; y < height; ++y) {
                 img.setRGB(x, y, getPixel(x, y));
